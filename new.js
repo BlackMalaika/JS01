@@ -1,7 +1,10 @@
-let fname = "Angel";
-let country = "Nigeria";
-let F = 5;
-let i = 4;
+const myScreenOutput = document.getElementById('final');
+const myDeets = {
+    myFirstName: 'Angel',
+    myLasttName: 'OkeyMoses',
+    myHeight: '5ft 4in',
+    myCountry: 'Nigeria',
+}
 
-
-console.log(`My name is ${fname}, I am from ${country} and I am ${F} feet ${i} inches tall`)
+myScreenOutput.innerHTML = '<h2>'+ 'First Name: ' + myDeets.myFirstName + ' <br>'  +' Last Name: ' + myDeets.myLasttName + '<br> ' + 'Height: ' + myDeets.myHeight + '<br> '  +'Country: '+ myDeets.myCountry+ '</h2>';
+console.log(myDeets)
